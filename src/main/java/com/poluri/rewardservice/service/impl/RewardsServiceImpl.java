@@ -4,6 +4,7 @@ import com.poluri.rewardservice.model.Customer;
 import com.poluri.rewardservice.model.CustomerRewards;
 import com.poluri.rewardservice.model.Transaction;
 import com.poluri.rewardservice.service.RewardsService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.time.Month;
@@ -11,6 +12,7 @@ import java.time.format.TextStyle;
 import java.util.*;
 import java.util.stream.Collectors;
 
+@Slf4j
 @Service
 public class RewardsServiceImpl implements RewardsService {
     @Override
